@@ -7,6 +7,15 @@ module.exports = {
     purge: {
         content: [
           "/index.html",
+          "/nosotros.html",
+          "/header.html",
+          "/voluntariado.html",
+          "/footer.html",
+          "/etica.html",
+          "/cuidarnos.html",
+          "/cosa.html",
+          "/contigo.html",
+          "/casaronald.html"
         ],
       },
 }
