@@ -1,0 +1,821 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Maax Rounded;
+  src: url("assets/fonts/Maax\ Rounded.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Maax Rounded Bold;
+  font-weight: bold;
+  src: url("assets/fonts/Maax\ Rounded\ Bold.otf") format("opentype");
+}
+
+:root {
+  --primary: rgb(249, 211, 50);
+  --secondary: rgb(147, 3, 69);
+  --accent: rgb(255, 59, 157);
+}
+
+body {
+  font-family: Maax Rounded Bold;
+}
+
+header,
+nav {
+  background-color: var(--primary);
+  color: var(--secondary);
+  overflow: hidden;
+}
+
+#dropdownNavbar,
+#secondDropdownNavbar,
+#thirdDropdownNavbar {
+  z-index: 999;
+  background-color: rgb(147, 3, 69);
+  color: white;
+  font-family: Maax Rounded;
+}
+
+.option:hover {
+  background-color: var(--accent);
+}
+
+.contigo {
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.fotos {
+  height: 60vh;
+}
+
+.flecha {
+  margin-top: 300px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  height: 20vh;
+  background-color: var(--primary);
+}
+
+.hero-text {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  color: var(--secondary);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 74.6%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.projects-title,
+.allies-title,
+.social-title {
+  color: var(--secondary);
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.projects-paragraph {
+  font-family: Maax Rounded;
+  color: var(--secondary);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.projects-block {
+  display: grid;
+  grid-template-columns: 10% repeat(2, 1fr) 10%;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.block1 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.block2 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.block3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.block4 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.block5 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+.block6 {
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.projects-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 537px;
+  height: 269px;
+  background-color: var(--secondary);
+  color: white;
+}
+
+.projects-image {
+  width: 537px;
+  height: 269px;
+}
+
+.projects-text:hover {
+  background-color: var(--accent);
+}
+
+.data {
+  width: 80%;
+  margin: 100px auto;
+}
+
+.allies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75.7%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.aliados {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.cta-quote {
+  width: 100%;
+  height: 169px;
+  background-color: rgb(147, 3, 69);
+  margin-top: 50px;
+  position: relative;
+}
+
+.cta-quote:hover {
+  background-color: var(--accent);
+  cursor: pointer;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75.7%;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.social-link {
+  font-family: Maax Rounded;
+  color: var(--secondary);
+}
+
+.instagram {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-logo {
+  height: 25px;
+  width: 25px;
+  color: var(--secondary);
+  margin-right: 5px;
+}
+
+.posts {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.banner {
+  width: 100%;
+}
+
+footer {
+  height: 500px;
+  background-color: var(--primary);
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+}
+
+.contacto-title {
+  font-size: 2.25rem;
+}
+
+.telefono,
+.mail {
+  font-family: Maax Rounded;
+  font-size: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}
+
+.icons {
+  margin: 0 15px 15px 30px;
+  cursor: pointer;
+}
+
+.us-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.us-paragraph,
+.history-paragraph {
+  font-family: Maax Rounded;
+  color: var(--secondary);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  margin: 0px 20% 0px 20%;
+}
+
+.proposito-img {
+  margin-top: 100px;
+}
+
+.values-section,
+.history-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.values-title,
+.history-title,
+.volunteer-title {
+  color: var(--secondary);
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+}
+
+.values {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-grow: 4;
+  margin: 0px 10% 0px 10%;
+}
+
+@media only screen and (min-width: 1500px) {
+  .values {
+    margin: 0px 20% 0px 20%;
+  }
+}
+
+.solidaridad:hover {
+  fill: red;
+}
+
+.smile {
+  position: bottom;
+}
+
+.timeline {
+  margin-top: 75px;
+}
+
+.quote {
+  margin-top: 100px;
+}
+
+.quote-background {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: var(--secondary);
+  width: 1076px;
+  height: 148px;
+}
+
+.quote-text {
+  color: var(--primary);
+  font-size: 2.25em;
+  margin: 0px 5% 0px 5%;
+}
+
+.team-div {
+  background-color: var(--secondary);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.team-quote,
+.director-quote {
+  display: flex;
+  justify-content: center;
+}
+
+.team-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.team-main-bubble {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.team-main-name {
+  color: white;
+  font-size: 1.75em;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.team-main-title {
+  color: white;
+  font-size: 1.5em;
+  font-family: Maax Rounded;
+  text-align: center;
+}
+
+.director-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+  margin: 40px 10% 0px 10%;
+}
+
+.director-bubble {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.director-name {
+  color: white;
+  font-size: 1.25em;
+  font-family: Maax Rounded;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 100px;
+}
+
+.volunteer-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.volunteer-title {
+  color: var(--secondary);
+  font-size: 2.25rem;
+  margin-bottom: 30px;
+}
+
+.volunteer-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-self: center;
+  padding: 0px 150px 0px 150px;
+}
+
+.volunteer-photo {
+  grid-area: 1 / 1 / 3 / 2;
+  width: 436px;
+  height: 436px;
+}
+
+.volunteer-text {
+  grid-area: 1 / 2 / 2 / 3;
+  color: var(--secondary);
+  font-family: Maax Rounded;
+  padding: 20px 20px 10px 40px;
+}
+
+.volunteer-cta {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.volunteer-cta-svg circle:hover {
+  fill: var(--accent);
+  cursor: pointer;
+}
+
+.data-div {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.volunteer-cta-quote {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-top: 100px;
+  padding: 0px 150px 0px 150px;
+}
+
+.volunteer-cta-image {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.volunteer-cta-text {
+  grid-area: 1 / 2 / 2 / 3;
+  font-family: Maax Rounded;
+  color: var(--secondary);
+}
+
+.volunteer-past {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.volunteer-past-title {
+  color: var(--secondary);
+  font-size: 2.25rem;
+}
+
+.volunteer-past-posts {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+}
+
+.cuidarnos-title,
+.casaronald-title {
+  color: var(--secondary);
+  font-size: 2.25rem;
+  margin-top: 100px;
+  align-self: center;
+}
+
+.cuidarnos-div {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 0px;
+  padding: 20px 120px 0px 120px;
+}
+
+.cuidarnos-logo {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.cuidarnos-text {
+  grid-area: 2 / 1 / 3 / 2;
+  font-family: Maax Rounded;
+  color: var(--secondary);
+}
+.cuidarnos-image {
+  grid-area: 1 / 2 / 3 / 3;
+}
+
+.cuidarnos-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  align-self: center;
+  padding: 0px 150px 0px 150px;
+}
+
+.cuidarnos-photo {
+  grid-area: 1 / 1 / 3 / 2;
+  width: 436px;
+  height: 436px;
+}
+
+.cuidarnos-text-2 {
+  grid-area: 1 / 2 / 2 / 3;
+  color: var(--secondary);
+  font-family: Maax Rounded;
+  padding: 35px 20px 10px 0px;
+}
+
+.cuidarnos-cta {
+  grid-area: 2 / 2 / 3 / 3;
+  padding: 0px 0px 45px 0px;
+}
+
+.casaronald-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.casaronald-block {
+  display: flex;
+  flex-direction: column;
+  gap: 18%;
+  width: 50%;
+}
+
+.casaronald-logo {
+  margin-left: 11%;
+}
+
+.casaronald-text {
+  font-family: Maax Rounded;
+  color: var(--secondary);
+  padding: 0% 7% 0% 10%;
+}
+
+/* ------------------------------------------------------ */
+
+.pilars-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.pilars-image {
+  margin-left: 5%;
+}
+
+.pilars-list {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 80px;
+}
+
+.pilar {
+  display: flex;
+}
+
+.pilar-text {
+  font-family: Maax Rounded;
+  color: var(--secondary);
+  margin-left: 25px;
+}
+
+.volunteer-button {
+  width: 400px;
+  height: 50px;
+  color: white;
+  background-color: var(--accent);
+}
+
+.contact-div {
+  height: 700px;
+  background-color: #930345;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 20px;
+}
+
+.submit-button {
+  width: 500px;
+  height: 50px;
+  color: white;
+  background-color: var(--accent);
+  border: 3px solid white;
+}
+
+.instagram-posts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 90vh; /* Set height to 80% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-image {
+  width: 100%;
+  height: 80%; /* Set height to 80% of the container's height */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.slider-text {
+  background-color: var(--primary);
+  height: 20%;
+  /* line-height: 100px; */
+  text-align: center;
+  padding: 0 10% 0 10%;
+  color: var(--secondary);
+  width: 100%;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-button {
+  padding: 10px 20px;
+  font-size: 24px;
+  position: absolute;
+  z-index: 1;
+}
+
+.left-button {
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.right-button {
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.descargar-etica {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+}
+
+.aliados-responsive {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .projects-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projects-title {
+    text-align: center;
+  }
+
+  .projects-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 269px;
+    background-color: var(--secondary);
+    color: white;
+    padding: 2%;
+  }
+
+  .projects-image {
+    width: 100%;
+    height: 269px;
+    object-fit: cover;
+  }
+  .data-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aliados {
+    display: none;
+  }
+  .aliados-responsive {
+    display: block;
+    width: 100%;
+    padding: 15%;
+  }
+  .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: 50vh; /* Set height to 80% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-image {
+    width: 100%;
+    height: 80%; /* Set height to 80% of the container's height */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+  }
+
+  .slider-text {
+    background-color: var(--primary);
+    height: 25%;
+    /* line-height: 100px; */
+    text-align: center;
+    padding: 0 10% 0 10%;
+    color: var(--secondary);
+    width: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-button {
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .right-button {
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .volunteer-past-posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cta-block {
+    display: none;
+  }
+  .footer-ul {
+    display: none;
+  }
+  .quote-background {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+    background-color: var(--secondary);
+    width: 80%;
+    height: 70px;
+  }
+  .quote-text {
+    font-size: 1rem;
+  }
+  .team-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .team-main-bubbles svg circle{
+    r: 160;
+  }
+}

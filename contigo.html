@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.1/dist/flowbite.min.css" />
+    <title>ConJuntos</title>
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <script src="header.js"></script>
+  <!-- CONTIGO -->
+
+  <section>
+    <div>
+        <div>
+            <img src="assets/svg/contigofoto.svg" alt="">
+        </div>
+        <div>
+            <h5 style="font-family: Maax Rounded; color:#930345; font-size:1.5em; margin-top: 50px; padding: 0% 5% 0% 5%;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus voluptate dolor magni ad sunt totam dignissimos assumenda voluptatibus modi quis temporibus saepe eos beatae dolorum corrupti et, harum commodi officia.</h5>
+            <div style="display: flex; flex-direction: row; justify-content: center; gap: 100px; margin-top: 50px;">
+                <img src="assets/svg/empresas.svg" alt="">
+                <img src="assets/svg/personas.svg" alt="">
+                <img src="assets/svg/donar.svg" alt="">
+            </div>
+        </div>
+    </div>
+  </section>
+  <section id="empresas">
+    <div style="height: 500px; background-color: #F9D332; margin-top: 100px;">
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <div style="display: flex; flex-direction: column; width: 50%;">
+                <div>
+                    <h4 style="font-size: 1.75em; color:#930345; padding: 0 7% 0 7%;">Empresas:</h4>
+                </div>
+                <div style="font-family: Maax Rounded; color:#930345; padding: 7%;">
+                    <p>Si eres parte de una empresa u otra organización y deseas trabajar en conjunto por el bienestar y felicidad de niñas, niños y adolescentes en situación vulnerable, puedes escribir a info@conjuntos.org o contactarnos aquí. </p>
+                </div>
+            </div>
+            <div style="padding: 3%;">
+                <img src="assets/images/juanito.png" alt="">
+            </div>
+        </div>
+    </div>
+  </section>
+  <section id="personas">
+    <div style="height: 500px; background-color: #930345;">
+        <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap;">
+            <div style="display: flex; flex-direction: column; width: 50%; justify-content: space-around; gap: 70px;">
+                <div>
+                    <h4 style="font-size: 1.75em; color:#F9D332; padding: 0 7% 0 7%;">Personas:</h4>
+                </div>
+                <div style="font-family: Maax Rounded; color:#F9D332; padding: 7%;">
+                    <p>Si quieres contribuir a mejorar la vida de niñas, niños y adolescentes en situación de vulnerabilidad ¡Te invitamos a unirte a nuestra comunidad de voluntarios!</p>
+                </div>
+                <!-- <div style="padding: 0 7% 0 7%;">
+                    <a href=""><button class="volunteer-button">Voluntariado fijo</button></a>
+                </div>
+                <div style="padding: 0 7% 0 7%;">
+                    <a href=""><button class="volunteer-button">Voluntariado espontáneo</button></a>
+                </div> -->
+            </div>
+            <div style="padding: 3%;">
+                <img src="assets/images/porta.png" alt="">
+            </div>
+        </div>
+    </div>
+  </section>
+  <section id="donar">
+    <div style="height: 700px; background-color: #F9D332;">
+        <div style="display: flex; flex-direction: column;">
+            <div style="padding-left: 8%; padding-top: 5%; padding-bottom: 4%;">
+                <h4 style="font-size: 1.75em; color:#930345;">Donar:</h4>
+            </div>
+            <div style="display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; gap: 100px; padding: 0 8%;">
+                <div>
+                    <img src="assets/svg/yape.svg" alt="">
+                </div>
+                <div>
+                    <img src="assets/svg/corazon.svg" alt="">
+                </div>
+                <div>
+                    <img src="assets/svg/transferencia.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section id="contacto">
+    <div class="contact-div">
+                <div>
+                    <img src="assets/svg/contacto.svg" alt="">
+                </div>
+                <div>
+                    <div >
+                      <form action="https://formsubmit.co/santiagovrodriguez@gmail.com" method="POST" class="contact-form">
+                        <input type="text" name="name" placeholder="Nombre:" class="form-input" required>
+                        <input type="email" name="email" placeholder="Correo electrónico:" class="form-input" required>
+                        <input type="number" name="number" placeholder="Teléfono:" class="form-input">
+                        <textarea placeholder="Mensaje" class="form-control" name="message" rows="10" class="form-input" required></textarea>
+                        <input type="hidden" name="_next" value="https://conjuntos.org">
+                        <input type="hidden" name="_captcha" value="false">
+                        <button type="submit" class="submit-button">Enviar</button>
+                      </form>
+                    </div>
+                </div>
+    </div>
+  </section>
+
+
+  
+      <!-- FOOTER -->
+      <div id="footer-container"></div>
+      <script src="footer.js"></script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/flowbite@1.5.1/dist/flowbite.js"></script>
+</body>
+</html>
