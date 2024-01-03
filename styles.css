@@ -693,6 +693,8 @@ nav {
 .projects-image {
   width: 537px;
   height: 269px;
+  -o-object-fit:cover;
+  object-fit:cover;
 }
 
 .projects-text:hover {
@@ -892,6 +894,10 @@ footer {
 .director-quote {
   display: flex;
   justify-content: center;
+}
+
+.director-quote {
+  margin-top: 75px;
 }
 
 .team-main {
@@ -1259,6 +1265,15 @@ footer {
   display: none;
 }
 
+.timelinemobile {
+  display: none;
+}
+
+.team-main-bubbles {
+  margin-top: 75px;
+}
+
+
 @media (max-width: 767px) {
   .projects-block {
     display: flex;
@@ -1298,6 +1313,19 @@ footer {
 
   .aliados {
     display: none;
+  }
+
+  .timelinemobile {
+    display: flex;
+  }
+
+  .timelineweb {
+    display: none;
+  }
+
+  .timeline {
+    margin-top: 0px;
+    padding: 5%;
   }
 
   .aliados-responsive {
@@ -1391,5 +1419,31 @@ footer {
 
   .team-main-bubbles svg circle{
     r: 160;
+  }
+
+  .quote {
+    margin-top: 0px;
+  }
+
+  .director-name {
+    color: white;
+    font-size: 1.25em;
+    font-family: Maax Rounded;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .director-quote {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .team-main-name {
+    color: white;
+    font-size: 1.75em;
+    text-align: center;
+    margin-top: 0px;
   }
 }
