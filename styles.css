@@ -701,6 +701,10 @@ nav {
   background-color: var(--accent);
 }
 
+.projects-block-mobile {
+  display: none;
+}
+
 .data {
   width: 80%;
   margin: 100px auto;
@@ -1365,6 +1369,11 @@ footer {
   padding: 0 8%;
 }
 
+.director-bubble-2 {
+  width: 275px;
+  height: 275px;
+}
+
 @media (max-width: 767px) {
   .projects-block {
     display: flex;
@@ -1722,19 +1731,28 @@ footer {
   }
 
   .contact-form input, textarea {
-    width: 80%;
+    width: 65%;
   }
 
   .submit-button {
     color: white;
     background-color: var(--accent);
     border: 3px solid white;
-    width: 80%;
+    width: 65%;
   }
 
   .descargar-etica {
     padding: 5%;
     margin-top: 25px;
+  }
+
+  .projects-block {
+    display: none;
+  }
+
+  .projects-block-mobile {
+    display: flex;
+    flex-direction: column;
   }
 }
 
