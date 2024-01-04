@@ -820,7 +820,9 @@ footer {
   margin-top: 100px;
 }
 
-#proposito, #vision, #mision {width: 100%;}
+#proposito, #vision, #mision {
+  width: 100%;
+}
 
 .values-section,
 .history-section {
@@ -848,7 +850,10 @@ footer {
   margin: 0px 10% 0px 10%;
 }
 
-.mercy {width: 400px; height: 400px;}
+.mercy {
+  width: 400px;
+  height: 400px;
+}
 
 @media only screen and (min-width: 1500px) {
   .values {
@@ -1279,29 +1284,98 @@ footer {
 }
 
 .contigo-buttons {
-  display: flex; 
-  flex-direction: row; 
-  justify-content: center; 
-  gap: 100px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
   margin-top: 50px;
+  cursor: pointer;
 }
 
-.empresas-div{background-color: var(--primary); margin-top: 100px;}
-.empresas-title{font-size: 1.75em; color:var(--secondary); padding: 0 7% 0 7%;}
-.empresas-text {font-family: Maax Rounded; color:var(--secondary); padding: 7%;}
-.empresas-div-2 {display: flex; flex-direction: column; width: 50%;}
-.personas-div {background-color: var(--secondary);}
-.personas-title {font-size: 1.75em; color: var(--primary); padding: 0 7% 0 7%;}
-.personas-text {font-family: Maax Rounded; color: var(--primary); padding: 7%;}
-.personas-div-2{display: flex; flex-direction: column; width: 50%; justify-content: space-around; gap: 70px;}
-.donar-div{background-color:  var(--primary); padding: 2%;}
-.donar-title {font-size: 1.75em; color:var(--secondary);}
-.donar-div-2 {padding-left: 8%; padding-top: 5%; padding-bottom: 4%;}
-.donar-div-3 {display: flex; flex-direction: row; justify-content: center; align-items: center; flex-wrap: wrap; gap: 80px; padding: 0 8%;}
+.empresas-div{
+  background-color: var(--primary);
+  margin-top: 100px;
+}
+
+.empresas-title{
+  font-size: 1.75em;
+  color:var(--secondary);
+  padding: 0 7% 0 7%;
+}
+
+.empresas-text {
+  font-family: Maax Rounded;
+  color:var(--secondary);
+  padding: 7%;
+}
+
+.empresas-div-2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.personas-div {
+  background-color: var(--secondary);
+}
+
+.personas-title {
+  font-size: 1.75em;
+  color: var(--primary);
+  padding: 0 7% 0 7%;
+}
+
+.personas-text {
+  font-family: Maax Rounded;
+  color: var(--primary);
+  padding: 7%;
+}
+
+.personas-div-2{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-around;
+  gap: 70px;
+}
+
+.donar-div{
+  background-color:  var(--primary);
+  padding: 2%;
+}
+
+.donar-title {
+  font-size: 1.75em;
+  color:var(--secondary);
+}
+
+.donar-div-2 {
+  padding-left: 8%;
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+
+.donar-div-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 0 8%;
+}
 
 @media (max-width: 767px) {
-  .projects-block {display: flex;flex-direction: column;align-items: center;}
-  .projects-title { text-align: center;}
+  .projects-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects-title {
+    text-align: center;
+  }
+
   .projects-text {
     display: flex;
     flex-direction: column;
@@ -1314,8 +1388,20 @@ footer {
     color: white;
     padding: 2%;
   }
-  .projects-image {width: 100%;height: 269px; -o-object-fit: cover;object-fit: cover; }
-  .data-div { display: flex; flex-direction: column;align-items: center;}
+
+  .projects-image {
+    width: 100%;
+    height: 269px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .data-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .aliados {
     display: none;
   }
@@ -1476,6 +1562,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
+
   .cuidarnos-photo,
   .cuidarnos-text-2,
   .cuidarnos-cta {
@@ -1493,6 +1580,7 @@ footer {
     width: 100%;
     text-align: justify;
   }
+
   .casaronald-text {
     margin-top: 25px;
   }
@@ -1507,7 +1595,7 @@ footer {
     margin-top: 0;
     padding: 5%;
   }
-  
+
   .casaronald-title {
     margin-top: 50px;
     margin-bottom: 0px;
@@ -1518,30 +1606,135 @@ footer {
     flex-direction: column;
   }
 
-  .pilars-image {margin-left: 0; padding: 5%;}
+  .pilars-image {
+    margin-left: 0;
+    padding: 5%;
+  }
 
-  .pilars-list { width: 100%; padding: 5%;}
+  .pilars-list {
+    width: 100%;
+    padding: 5%;
+  }
 
-  .volunteer-content {display: flex; flex-direction: column; padding: 0%;}
-  .volunteer-photo {padding: 5%;}
-  .volunteer-text {padding: 5%; text-align: justify;}
-  .volunteer-cta {padding-left: 5%;}
-  .volunteer-cta-quote { display: flex; flex-direction: column; padding: 5%;}
-  .contigo-buttons {display: flex; flex-direction: column; gap: 35px; align-items: center;}
-  .contigo-button {width: 300px; height: 150px;}
-  .contigo-div {padding: 5%;}
-  .empresas-title {padding: 0; text-align: center; margin-top: 30px;}
-  .empresas-text {padding: 0; text-align: justify; margin-top: 15px; margin-bottom: 0px;}
-  .empresas-div-2 {width: 100%; padding: 5%;}
-  .personas-title {padding: 0; text-align: center; margin-top: 30px;}
-  .personas-text {padding: 0; text-align: justify; margin-top: 15px; margin-bottom: 0px;}
-  .personas-div-2 {width: 100%; gap: 0px; padding: 5%;}
-  .contact-div {padding: 5%; align-self: center;}
-  .donar-title {text-align: center;}
-  .donar-div-2 {padding: 0; margin: 25px 0 25px 0;}
-  .contact-div {display: flex; flex-direction: column; gap: 25px;}
-  .contact-form {display: flex; flex-direction: column; gap: 20px; align-items: center;}
-  .contact-form input, textarea {width: 80%;}
-  .submit-button {color: white;background-color: var(--accent); border: 3px solid white; width: 80%;}
+  .volunteer-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+  }
+
+  .volunteer-photo {
+    padding: 5%;
+  }
+
+  .volunteer-text {
+    padding: 5%;
+    text-align: justify;
+  }
+
+  .volunteer-cta {
+    padding-left: 5%;
+  }
+
+  .volunteer-cta-quote {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .contigo-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+  }
+
+  .contigo-button {
+    width: 300px;
+    height: 150px;
+  }
+
+  .contigo-div {
+    padding: 5%;
+  }
+
+  .empresas-title {
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .empresas-text {
+    padding: 0;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .empresas-div-2 {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .personas-title {
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .personas-text {
+    padding: 0;
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .personas-div-2 {
+    width: 100%;
+    gap: 0px;
+    padding: 5%;
+  }
+
+  .contact-div {
+    padding: 5%;
+    align-self: center;
+  }
+
+  .donar-title {
+    text-align: center;
+  }
+
+  .donar-div-2 {
+    padding: 0;
+    margin: 25px 0 25px 0;
+  }
+
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .contact-form input, textarea {
+    width: 80%;
+  }
+
+  .submit-button {
+    color: white;
+    background-color: var(--accent);
+    border: 3px solid white;
+    width: 80%;
+  }
+
+  .descargar-etica {
+    padding: 5%;
+    margin-top: 25px;
+  }
 }
 
