@@ -589,10 +589,14 @@ nav {
 }
 
 .contigo {
+  width: 20vh;
+  padding: 0.5% !important;
   background-color: var(--secondary);
   color: var(--primary);
   font-size: 1.25rem;
 }
+
+
 
 .fotos {
   height: 60vh;
@@ -1200,7 +1204,7 @@ footer {
   width: 500px;
   height: 50px;
   color: white;
-  background-color: var(--accent);
+  background-color: var(--accent) !important;
   border: 3px solid white;
 }
 
@@ -1372,6 +1376,10 @@ footer {
 .director-bubble-2 {
   width: 275px;
   height: 275px;
+}
+
+.cta-block-mobile {
+  display: none;
 }
 
 @media (max-width: 767px) {
@@ -1729,6 +1737,7 @@ footer {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    width: 46vh;
   }
 
   .contact-form input, textarea {
@@ -1737,7 +1746,7 @@ footer {
 
   .submit-button {
     color: white;
-    background-color: var(--accent);
+    background-color:  var(--accent) !important;
     border: 3px solid white;
     width: 65%;
   }
@@ -1754,6 +1763,28 @@ footer {
   .projects-block-mobile {
     display: flex;
     flex-direction: column;
+  }
+
+  .contigo {
+    width: 15vh;
+    font-size: 1rem;
+    padding: 2% !important;
+    /* display: none; */
+  }
+
+  .cta-block-mobile {
+    display:block;
+  }
+
+  .geo {
+    width: 25%;
+  }
+
+  .cta-quote-mobile {
+      height: 50px;
+      background-color: rgb(147, 3, 69);
+      margin-top: 50px;
+      display: flex;
   }
 
 }
