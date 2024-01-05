@@ -777,7 +777,6 @@ nav {
 }
 
 footer {
-  height: 500px;
   background-color: var(--primary);
   color: var(--secondary);
   display: flex;
@@ -797,6 +796,7 @@ footer {
 .socials {
   display: flex;
   justify-content: center;
+  padding-bottom: 2%;
 }
 
 .icons {
@@ -1102,8 +1102,8 @@ footer {
 
 .cuidarnos-photo {
   grid-area: 1 / 1 / 3 / 2;
-  width: 436px;
-  height: 436px;
+  /* width: 436px;
+  height: 436px; */
 }
 
 .cuidarnos-text-2 {
