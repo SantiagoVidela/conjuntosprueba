@@ -1022,13 +1022,16 @@ footer {
 }
 
 .volunteer-cta-quote {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   margin-top: 100px;
-  padding: 0px 150px 0px 150px;
+  padding: 0px 150px 0px 150px; */
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .volunteer-cta-image {
@@ -1245,7 +1248,7 @@ footer {
   padding: 0 10% 0 10%;
   color: var(--secondary);
   width: 100%;
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
