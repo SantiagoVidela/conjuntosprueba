@@ -1018,7 +1018,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 100px;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .volunteer-cta-quote {
@@ -1056,6 +1056,14 @@ footer {
 .volunteer-past-title {
   color: var(--secondary);
   font-size: 2.25rem;
+}
+
+.impacto-title {
+  color: var(--secondary); 
+  font-size: 1.5rem; 
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .volunteer-past-posts {
