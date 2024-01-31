@@ -689,16 +689,18 @@ nav {
   justify-content: center;
   align-items: center;
   width: 537px;
-  height: 269px;
+  height: 350px;
   background-color: var(--secondary);
   color: white;
 }
 
 .projects-image {
-  width: 537px;
-  height: 269px;
+  /* width: 537px;
+  height: 269px; */
   -o-object-fit:cover;
   object-fit:cover;
+  width: 537px;
+  height: 350px
 }
 
 .projects-text:hover {
@@ -863,6 +865,32 @@ footer {
   height: 400px;
 }
 
+.circulo-contacto {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.circulo-contacto-title {
+  font-size: 2rem;
+  color: var(--secondary);
+  text-align: center;
+}
+
+
+.circulo-contacto-text {
+  font-family: Maax Rounded;
+  font-size: 1.5rem;
+  color: var(--secondary);
+  text-align: center;
+}
+
 @media only screen and (min-width: 1500px) {
   .values {
     margin: 0px 20% 0px 20%;
@@ -920,8 +948,10 @@ footer {
 .team-main {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+  padding: 0 10% 0 10%;
 }
 
 .team-main-bubble {
@@ -1019,6 +1049,11 @@ footer {
   justify-content: center;
   gap: 100px;
   margin-top: 30px;
+}
+
+.aqui {
+  text-decoration: underline;
+  font-family: Maax Rounded Bold;
 }
 
 .volunteer-cta-quote {
@@ -1355,7 +1390,7 @@ footer {
   flex-direction: column;
   width: 50%;
   justify-content: space-around;
-  gap: 70px;
+  /* gap: 40px; */
 }
 
 .donar-div{
@@ -1380,8 +1415,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 80px;
+  gap: 70px;
   padding: 0 8%;
+}
+
+.volunteer-button-div{ 
+  padding: 0 7% 0 7%;
 }
 
 .director-bubble-2 {
@@ -1391,6 +1430,10 @@ footer {
 
 .cta-block-mobile {
   display: none;
+}
+
+.logo-carrousel {
+  margin-top: 20px;
 }
 
 @media (max-width: 767px) {
@@ -1796,6 +1839,40 @@ footer {
       background-color: rgb(147, 3, 69);
       margin-top: 50px;
       display: flex;
+  }
+
+  .circulo-contacto {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .circulo-contacto-title {
+    font-size: 1.5rem;
+  }
+
+  .circulo-contacto-text{
+    font-size: 1rem;
+  }
+
+  .volunteer-button {
+    width: 300px;
+    height: 50px;
+    color: white;
+    background-color: var(--accent);
+    margin: 0 auto;
+  }
+
+  .volunteer-button-div{ 
+    padding: 0;
+    align-self: center;
+    margin-top: 10px;
   }
 
 }
