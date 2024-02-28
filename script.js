@@ -25,3 +25,16 @@ updateSlide();
 
 // Automatically change slide every 3 seconds
 setInterval(nextSlide, 3000);
+
+document.addEventListener('DOMContentLoaded', function () {
+  var whatsappChatButton = document.getElementById('whatsapp-chat-button');
+  var whatsappNumber = '51933438357';
+
+  if (whatsappChatButton) {
+    whatsappChatButton.addEventListener('click', function (event) {
+      event.preventDefault();
+      var whatsappUrl = 'https://api.whatsapp.com/send?phone=' + whatsappNumber;
+      window.open(whatsappUrl, '_blank');
+    });
+  }
+});
