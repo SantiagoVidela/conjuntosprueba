@@ -1,4 +1,4 @@
-const images = ['assets/images/slider1.png', 'assets/images/slider2.jpg', 'assets/images/slider3.jpg'];
+const images = ['assets/images/slider1.png', 'assets/images/2.png', 'assets/images/3.png'];
 const imageTexts = ['Llevamos bienestar y felicidad a niños, niñas y adolescentes en situación de vulnerabilidad.', 'Existimos para que la bondad logre convertirse en impacto real.', 'Creamos lazos que generan impacto. '];
 
 let currentIndex = 0;
