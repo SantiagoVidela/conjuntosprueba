@@ -27,21 +27,21 @@ updateSlide();
 setInterval(nextSlide, 3000);
 
 
-document.addEventListener('DOMContentLoaded', function () {
-  var whatsappChatButton = document.getElementById('whatsapp-chat-button');
-  var whatsappNumber = '51933438357';
+// document.addEventListener('DOMContentLoaded', function () {
+//   var whatsappChatButton = document.getElementById('whatsapp-chat-button');
+//   var whatsappNumber = '51933438357';
 
-  if (whatsappChatButton) {
-    console.log("Button found!"); // Add this line for debugging
-    whatsappChatButton.addEventListener('click', function (event) {
-      event.preventDefault();
-      console.log("Button clicked!"); // Add this line for debugging
-      var whatsappUrl = 'https://api.whatsapp.com/send?phone=' + whatsappNumber;
-      window.open(whatsappUrl, '_blank');
-    });
-  } else {
-    console.log("Button not found!"); // Add this line for debugging
-  }
-});
+//   if (whatsappChatButton) {
+//     console.log("Button found!"); // Add this line for debugging
+//     whatsappChatButton.addEventListener('click', function (event) {
+//       event.preventDefault();
+//       console.log("Button clicked!"); // Add this line for debugging
+//       var whatsappUrl = 'https://api.whatsapp.com/send?phone=' + whatsappNumber;
+//       window.open(whatsappUrl, '_blank');
+//     });
+//   } else {
+//     console.log("Button not found!"); // Add this line for debugging
+//   }
+// });
 
 
