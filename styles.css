@@ -861,8 +861,10 @@ footer {
 }
 
 .mercy {
-  width: 400px;
-  height: 400px;
+  /* width: 400px;
+  height: 400px; */
+  width: 275px;
+  height: 275px;
 }
 
 .circulo-contacto {
@@ -980,6 +982,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   padding: 0 10% 0 10%;
+  gap: 100px;
 }
 
 .team-main-bubble {
@@ -1363,6 +1366,8 @@ footer {
 
 .team-main-bubbles {
   margin-top: 75px;
+  width: 275px;
+  /* border: 3px solid green; */
 }
 
 .contigo-buttons {
