@@ -1485,6 +1485,46 @@ footer {
   z-index: 1000;
 }
 
+/* Basic styles for the popup */
+/* Basic styles for the popup */
+.popup {
+  display: none; /* Hidden initially */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 25px;
+  border-radius: 8px;
+  z-index: 1000;
+  width: 90vw; /* Increase the width for better fit */
+  height: auto; /* Allow height to adjust automatically */
+  max-width: 600px; /* Restrict the max width to avoid overflowing */
+  max-height: 90vh; /* Ensure it doesn't exceed viewport height */
+  overflow: auto; /* Add scrolling if needed */
+  box-sizing: border-box;
+}
+
+/* Adjusted image styling */
+.popup-image {
+  border-radius: 8px;
+  width: 100%; /* Ensure the image fills the popup width */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 80vh; /* Ensure image doesn’t exceed viewport height */
+} 
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: 5px;
+  color: white;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+
+
 @media (max-width: 767px) {
   .projects-block {
     display: flex;
@@ -1953,7 +1993,16 @@ footer {
     align-self: center;
   }
 
-
+  .popup {
+    width: 95vw; /* Full width on mobile */
+    max-width: none; /* Remove max width constraint */
+    padding: 5px;
+    border-radius: 8px; /* Remove border radius for full-screen effect */
+  }
+  
+  .popup-image {
+    max-height: 90vh; /* Use most of the vertical space on mobile */
+  }
 
 }
 

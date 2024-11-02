@@ -26,6 +26,20 @@ updateSlide();
 // Automatically change slide every 3 seconds
 setInterval(nextSlide, 3000);
 
+document.addEventListener("DOMContentLoaded", function() {
+  const popup = document.getElementById("popup");
+  const closeBtn = document.getElementById("close-btn");
+
+  // Show the popup when the page loads
+  popup.style.display = "block";
+
+  // Close the popup when the X is clicked
+  closeBtn.addEventListener("click", function() {
+      popup.style.display = "none";
+  });
+});
+
+
 
 // document.addEventListener('DOMContentLoaded', function () {
 //   var whatsappChatButton = document.getElementById('whatsapp-chat-button');
